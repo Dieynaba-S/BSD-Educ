@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "715160013269",
+    "project_id": "app-gestionsupportdecours",
+    "storage_bucket": "app-gestionsupportdecours.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715160013269:android:a73e73a98bf9ce7d87955c",
+        "android_client_info": {
+          "package_name": "com.example.app_gestionsupportdecours"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715160013269-tvd47sd4fibrn6i25196kn87cvur2tc5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMHS4uYKR8MK-PKXewynnqaET4cVCHOL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715160013269-tvd47sd4fibrn6i25196kn87cvur2tc5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "715160013269-lvpgfuv215157m31h9eqecgres9bggat.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.appGestionsupportdecours"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715160013269:android:eacdb3f928482d1887955c",
+        "android_client_info": {
+          "package_name": "sn.bsd.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715160013269-tvd47sd4fibrn6i25196kn87cvur2tc5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMHS4uYKR8MK-PKXewynnqaET4cVCHOL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715160013269-tvd47sd4fibrn6i25196kn87cvur2tc5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "715160013269-lvpgfuv215157m31h9eqecgres9bggat.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.appGestionsupportdecours"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
