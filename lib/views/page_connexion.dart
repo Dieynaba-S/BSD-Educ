@@ -1,6 +1,5 @@
-// Création de notre page de connexion
-// (même pattern que page_acceuil.dart de référence : StatefulWidget + initState + setState)
 
+// Création de notre page de connexion
 import 'package:app_gestionsupportdecours/app_state.dart';
 import 'package:app_gestionsupportdecours/repository/users/firestore_user_repository.dart';
 import 'package:app_gestionsupportdecours/view_models/user_view_model.dart';
@@ -14,7 +13,6 @@ class PageConnexion extends StatefulWidget {
 }
 
 class _PageConnexionState extends State<PageConnexion> {
-  // Déclaration du ViewModel
   late UserViewModel _uvm;
 
   final _formKey = GlobalKey<FormState>();
@@ -38,12 +36,11 @@ class _PageConnexionState extends State<PageConnexion> {
   Future<void> _connexion() async {
     if (!_formKey.currentState!.validate()) return;
 
-    setState(() {}); // Déclencher l'affichage du chargeur
+    setState(() {});
     await _uvm.connexion(_emailCtrl.text, _motDePasseCtrl.text);
-    setState(() {}); // Rebuilder après la réponse
+    setState(() {});
 
     if (_uvm.erreur == null && _uvm.utilisateurConnecte != null) {
-      // Mettre à jour l'état global
       AppState().update(() {
         AppState().estConnecte = true;
         AppState().utilisateurConnecteUid = _uvm.utilisateurConnecte!.uid;
@@ -62,22 +59,27 @@ class _PageConnexionState extends State<PageConnexion> {
         child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 40),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const SizedBox(height: 40),
 
-              // ── En-tête ─────────────────────────────────────────────────
-              Text(
-                Image.asset('assets/images/logo.jpeg',
-  height: 120,
-  width: 120,
-),
+              // ── Logo ────────────────────────────────────────────────────
+              Center(
+                child: Image.asset(
+                  'assets/images/logo.jpeg',
+                  height: 150,
+                  width: 150,
+                ),
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 16),
+
+              // ── Sous-titre ───────────────────────────────────────────────
               Text(
                 'Connectez-vous pour accéder à vos documents académiques',
+                textAlign: TextAlign.center,
                 style: TextStyle(
-                    color: Theme.of(context).colorScheme.onSurfaceVariant),
+                  color: Theme.of(context).colorScheme.onSurfaceVariant,
+                ),
               ),
               const SizedBox(height: 40),
 
@@ -173,14 +175,14 @@ class _PageConnexionState extends State<PageConnexion> {
                 children: [
                   const Text("Pas encore de compte ? "),
                   TextButton(
-                    onPressed: () =>
-                        Navigator.pushNamed(context, '/page-inscription'),
+                    onPressed: () => Navigator.pushNamed(
+                        context, '/page-inscription'),
                     child: const Text('Créer un compte'),
                   ),
                 ],
               ),
 
-              // ── Boutons thème (même pattern que page_acceuil.dart) ───────
+              // ── Boutons thème ────────────────────────────────────────────
               const SizedBox(height: 32),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -210,7 +212,6 @@ class _PageConnexionState extends State<PageConnexion> {
     );
   }
 
-  // Méthode qui retourne le widget d'erreur
   Widget _buildErreur(BuildContext context) {
     if (_uvm.erreur == null) return const SizedBox.shrink();
     return Container(

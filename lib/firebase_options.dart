@@ -4,16 +4,6 @@ import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
-/// Default [FirebaseOptions] for use with your Firebase apps.
-///
-/// Example:
-/// ```dart
-/// import 'firebase_options.dart';
-/// // ...
-/// await Firebase.initializeApp(
-///   options: DefaultFirebaseOptions.currentPlatform,
-/// );
-/// ```
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
@@ -41,48 +31,48 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDcdTg3MIARRw672ZGjCY_pi9hj7ZapJM8',
-    appId: '1:715160013269:web:41b752b8408818b587955c',
-    messagingSenderId: '715160013269',
-    projectId: 'app-gestionsupportdecours',
-    authDomain: 'app-gestionsupportdecours.firebaseapp.com',
-    storageBucket: 'app-gestionsupportdecours.firebasestorage.app',
+    apiKey: 'AIzaSyAdOXx5sXymysVRR-Llxp1K6hBkK3plJIg',
+    appId: '1:1038934382764:web:db53f7ba880659298ba709',
+    messagingSenderId: '1038934382764',
+    projectId: 'doc-rd-isi',
+    authDomain: 'doc-rd-isi.firebaseapp.com',
+    storageBucket: 'doc-rd-isi.firebasestorage.app',
+    measurementId: 'G-R2T0CXPG8M',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCMHS4uYKR8MK-PKXewynnqaET4cVCHOL8',
-    appId: '1:715160013269:android:a73e73a98bf9ce7d87955c',
-    messagingSenderId: '715160013269',
-    projectId: 'app-gestionsupportdecours',
-    storageBucket: 'app-gestionsupportdecours.firebasestorage.app',
+    apiKey: 'AIzaSyDZlvM8tzmwRPKf_ut-3p8XMxgDCq0gndY',
+    appId: '1:1038934382764:android:c18eb4f37073e28d8ba709',
+    messagingSenderId: '1038934382764',
+    projectId: 'doc-rd-isi',
+    storageBucket: 'doc-rd-isi.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCZcvw3rK0057P07H_YcmwYt1drYW9hFGA',
-    appId: '1:715160013269:ios:b8b2a7184b4e8fa887955c',
-    messagingSenderId: '715160013269',
-    projectId: 'app-gestionsupportdecours',
-    storageBucket: 'app-gestionsupportdecours.firebasestorage.app',
-    iosClientId: '715160013269-lvpgfuv215157m31h9eqecgres9bggat.apps.googleusercontent.com',
+    apiKey: 'AIzaSyAy4Le432W2TCfhU-uCMyD9bWBcgFP3XW0',
+    appId: '1:1038934382764:ios:0aa78bcce3497b868ba709',
+    messagingSenderId: '1038934382764',
+    projectId: 'doc-rd-isi',
+    storageBucket: 'doc-rd-isi.firebasestorage.app',
     iosBundleId: 'com.example.appGestionsupportdecours',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCZcvw3rK0057P07H_YcmwYt1drYW9hFGA',
-    appId: '1:715160013269:ios:b8b2a7184b4e8fa887955c',
-    messagingSenderId: '715160013269',
-    projectId: 'app-gestionsupportdecours',
-    storageBucket: 'app-gestionsupportdecours.firebasestorage.app',
-    iosClientId: '715160013269-lvpgfuv215157m31h9eqecgres9bggat.apps.googleusercontent.com',
+    apiKey: 'AIzaSyAy4Le432W2TCfhU-uCMyD9bWBcgFP3XW0',
+    appId: '1:1038934382764:ios:0aa78bcce3497b868ba709',
+    messagingSenderId: '1038934382764',
+    projectId: 'doc-rd-isi',
+    storageBucket: 'doc-rd-isi.firebasestorage.app',
     iosBundleId: 'com.example.appGestionsupportdecours',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDcdTg3MIARRw672ZGjCY_pi9hj7ZapJM8',
-    appId: '1:715160013269:web:8f6550c0ff64ec5587955c',
-    messagingSenderId: '715160013269',
-    projectId: 'app-gestionsupportdecours',
-    authDomain: 'app-gestionsupportdecours.firebaseapp.com',
-    storageBucket: 'app-gestionsupportdecours.firebasestorage.app',
+    apiKey: 'AIzaSyAdOXx5sXymysVRR-Llxp1K6hBkK3plJIg',
+    appId: '1:1038934382764:web:c50dcaa995f684828ba709',
+    messagingSenderId: '1038934382764',
+    projectId: 'doc-rd-isi',
+    authDomain: 'doc-rd-isi.firebaseapp.com',
+    storageBucket: 'doc-rd-isi.firebasestorage.app',
+    measurementId: 'G-957XESMSZY',
   );
 }
