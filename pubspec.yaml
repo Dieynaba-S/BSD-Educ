@@ -32,6 +32,9 @@ dependencies:
   # File Picker
   file_picker: ^8.0.0
 
+  # URL Launcher
+  url_launcher: ^6.2.4
+
   # Localisation
   flutter_localizations:
     sdk: flutter

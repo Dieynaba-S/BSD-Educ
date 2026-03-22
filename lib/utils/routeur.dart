@@ -10,6 +10,7 @@ import 'package:app_gestionsupportdecours/views/page_detail_document.dart';
 import 'package:app_gestionsupportdecours/views/page_profil.dart';
 import 'package:app_gestionsupportdecours/views/page_admin.dart';
 import 'package:app_gestionsupportdecours/models/document_model.dart';
+import 'package:app_gestionsupportdecours/views/page_mot_de_passe_oublie.dart';
 
 abstract class Routeur {
   static const String routeInitiale = '/page-connexion';
@@ -21,6 +22,7 @@ abstract class Routeur {
     '/page-documents':      (context) => const PageDocuments(),
     '/page-profil':         (context) => const PageProfil(),
     '/page-admin':          (context) => const PageAdmin(),
+    '/page-mot-de-passe-oublie': (context) => const PageMotDePasseOublie(),
   };
 
   // Route avec paramètre pour passer un DocumentModel
